@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    font-family: 'Georgia',serif;
+}
+
+.header {
+    background-image: url(images/image-hero-desktop.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 40rem;
+}
+
+.header-top-nav {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.6rem 4.5rem;
+}
+
+
+.header-nav {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: rgb(141, 136, 196);
+
+}
+
+.header-nav:hover {
+    color: rgb(118, 56, 104);
+    border-bottom: 2px solid rgb(141, 136, 196);
+}
+.menu-btn,
+.mobile-menu-btn{
+    display: none;
+}
+
+.content {
+    margin: 0 auto;
+
+    border-radius: 0.6rem;
+    width: 50%;
+    z-index: 999;
+    transform: translateY(-6rem);
+}
+
+
+.first-card,
+.second-card {
+    border: 0.2rem solid rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: rgb(230, 230, 250);
+    border-radius: 0.5rem;
+
+}
+
+.first-card h2 {
+    text-align: center;
+    line-height: 60px;
+}
+.first-card p{
+    line-height: 30px;
+    text-align: center;
+}
+.first-card h2 {
+    padding: 0.9rem;
+}
+
+.first-card-opt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5rem;
+
+
+}
+.progress-container{
+    border: 0.2rem solid rgb(250, 250, 250);
+    width: 100%;
+    border-radius: 1rem;
+    height: 3vh;
+    position: relative;
+    background-color: rgb(244, 244, 244);
+}
+.progress-bar{
+    background:rgb(141, 136, 196);
+    width:80%;
+      height:2.4vh;
+      border-radius:0.5rem;
+    overflow:hidden;
+    text-align:center;
+    
+    
+}
+
+.fund button {
+    background-color: rgb(141, 136, 196);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem 1.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.bookmark button {
+    background-color: rgb(141, 136, 196);
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    padding-right: 2rem;
+    color: rgb(118, 56, 104);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.bookmark button:active {
+    color: rgb(141, 136, 196);
+}
+
+#bookmark {
+    max-width: 100%;
+    height: 2rem;
+}
+
+.second-card-feature {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.second-card-feature p {
+    color: rgb(118, 56, 104);
+    font-size: 0.8rem;
+}
+
+.range {
+    width: 100%;
+}
+
+.third-card {
+    padding: 1rem;
+    border: 0.2rem solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.third-card p {
+    font-size: 0.9rem;
+    line-height: 30px;
+    padding: 1rem 0;
+    color: rgb(118, 56, 104);
+}
+
+.third-card-child {
+    border: 0.2rem solid rgb(118, 56, 104);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.third-card-child:hover{
+    border-color: rgb(141, 136, 196);
+    cursor: pointer;
+}
+
+.stand-pledge,
+.pledge-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third-card .pledge {
+    color: rgb(141, 136, 196);
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.reward button {
+    background-color: rgb(141, 136, 196);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.6rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.pledge-left p {
+    color: black;
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+.pledge-left p span {
+    font-size: 0.8rem;
+    color: rgb(118, 56, 104);
+}
+
+.no-reward button {
+    background-color: rgb(118, 56, 104);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.6rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+#no-stock {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/*Selection Modal*/
+.selection-modal {
+    border: 0.2rem solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    margin: 5rem auto;
+    position: relative;
+
+}
+
+.selection-modal-card {
+    border: 0.2rem solid rgb(118, 56, 104);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.selection-modal-card:hover {
+    border-color: rgb(141, 136, 196);
+}
+
+.closeBtn {
+    background-color: inherit;
+    border: none;
+    max-width: 100%;
+}
+
+.closeModal {
+    right: 5px;
+
+    position: absolute;
+}
+
+.selection-modal p {
+    color: rgb(118, 56, 104);
+    line-height: 20px;
+    padding: 0.5rem 0rem;
+}
+
+.no-reward-pledge {
+    display: flex;
+    font-size: 0.8rem;
+    gap: 1rem;
+}
+.container{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    top: -5px;
+    left: -5px;
+    padding-right: 0.5rem;
+}
+.container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkbox{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #eee;
+}
+.container:hover input .checkbox{
+    background-color: grey;
+}
+.container input:checked .checkbox{
+    background-color: #eee;
+}
+.checkbox::after{
+    position: absolute;
+    content: "";
+    display: none;
+}
+.container input:checked ~ .checkbox::after{
+    display: block;
+}
+.container .checkbox::after{
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(141, 136, 196);
+}
+
+.typeOf-pledge {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+ .enter-pledge {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+
+}
+
+.selection-modal-card:hover .enter-pledge{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pledge-value {
+    width: 30%;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    transform: translateX(7rem);
+    border: 0.1rem solid black;
+}
+
+.typeOf-pledge .pledge {
+    color: rgb(141, 136, 196);
+}
+
+.stand-pledge p {
+    color: black;
+    font-weight: 900;
+}
+
+.stand-pledge p span {
+    color: rgb(118, 56, 104);
+}
+.pledge-stand{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.continue {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+.continue button {
+    background-color: rgb(141, 136, 196);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.6rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.continue p {
+    border: 0.2rem solid rgb(145, 145, 145);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+#selection-modal {
+    z-index: 1;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    overflow: scroll;
+
+}
+.mobile-left{
+    display: none;
+}
+
+/*feedback*/
+.feedback {
+    text-align: center;
+    margin: auto;
+    border: 0.2rem solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 30%;
+    margin: 5rem auto;
+    position: relative;
+
+}
+
+.feedback-modal {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.feedback-modal .feedback-closeBtn {
+    background-color: inherit;
+    max-width: 100%;
+}
+
+.feedback-closeModal {
+    position: absolute;
+    right: 5px;
+}
+
+.feedback h3 {
+    color: black;
+    padding: 0.5rem;
+
+}
+
+.feedback p {
+    color: rgb(118, 56, 104);
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.feedback button {
+    background-color: rgb(141, 136, 196);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width:600px) {
+
+    .header{
+        background-image: url(images/image-hero-mobile.jpg);
+    }
+    .header-top-nav {
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+
+    }
+
+    .header-right-nav {
+        background-color: white;
+        width: 90%;
+        margin: 2rem 1rem;
+        position: absolute;
+        height: 50vh;
+        left: 0;
+        top: 0;
+        border-radius: 0.5rem;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        display: none;
+        z-index: 1;
+        transition: 0.9s;
+        color: black;
+        border: 0.1rem solid rgb(255, 255, 255);
+        
+        
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem;
+
+
+    }
+
+    .header-nav:hover {
+        color: black;
+        border-bottom: 1px solid rgb(231, 232, 240);
+    }
+    .mobile-menu-btn{
+        display: block;
+        
+    }
+    .menu-btn {
+        z-index: 1;
+        position: absolute;
+        background-color: inherit;
+        border: none;
+        top: 1rem;
+        right: 0.5rem;
+        display: block;
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    .close-menu {
+        display: none;
+    }
+   
+    .content{
+        width: 80%;
+    }
+    .fund button{
+        font-size: 0.7rem;
+        
+    }
+    .first-card h2,
+    .first-card p{
+        line-height: 30px;
+    }
+    .bookmark-text{
+        display: none;
+    }
+    .second-card-feature {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .second-card-feature hr{
+     margin: 0 6rem;
+    }
+    .stand-pledge,
+    .pledge-left{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        line-height: 10px;
+    }
+    #no-stock h3{
+        line-height: 25px;
+    }
+    /*Mobile View for Modal Selection*/
+    .selection-modal{
+        width: 80%;
+    }
+    .enter-pledge{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .typeOf-pledge h3{
+        line-height: 23px;
+    }
+    .pledge-value{
+        transform: none;
+        width: 50%;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+    }
+    .continue{
+        display: flex;
+        align-items: center;
+
+    }
+    .continue button{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        
+    }
+    .pledge-stand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left{
+        display: none;
+    }
+    .mobile-left{
+        display: block;
+    }
+    /*Feedback Mobile Modal*/
+    .feedback{
+        width: 80%;
+    }
+}
+
+
+
+   
+
+
+
